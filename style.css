@@ -1,4 +1,9 @@
 @font-face {
+    font-family: 'Nvshu';
+    src: url('/fonts/nvshu1.ttf') format('truetype');
+  }
+  
+@font-face {
     font-family: 'NushuFont';
     src: url('./fonts/nvshu1.ttf') format('truetype');
 }

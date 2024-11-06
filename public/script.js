@@ -47,5 +47,12 @@ async function translateToNushu() {
 
     document.getElementById("nushuOutput").innerText = nushuText;
 }
-
+const response = await fetch('/.netlify/functions/translate', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ text: englishText })
+  });
+  
   

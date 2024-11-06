@@ -1,3 +1,8 @@
+const cors = require('cors');
+app.use(cors({
+  origin: 'https://chimerical-baklava-52cb2a.netlify.app'
+}));
+
 const axios = require('axios');
 
 exports.handler = async function(event, context) {
