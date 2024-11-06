@@ -13,7 +13,7 @@ function chineseToNushu(chineseText) {
 // 使用异步函数与后端服务器通信，将英文翻译为中文
 async function translateEnglishToChinese(englishText) {
     try {
-        const response = await fetch('http://localhost:3000/translate', {
+        const response = await fetch('/.netlify/functions/translate', {  // 修改为 Netlify Functions 的路径
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -47,19 +47,3 @@ async function translateToNushu() {
 
     document.getElementById("nushuOutput").innerText = nushuText;
 }
-const response = await fetch('/.netlify/functions/translate', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ text: englishText })
-  });
-const response = await fetch('/.netlify/functions/translate', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ text: englishText })
-  });
-  
-  
