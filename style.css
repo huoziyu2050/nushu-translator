@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'NushuFont';
-    src: url('fonts/nvshu1.ttf') format('truetype');
+    src: url('/public/fonts/nvshu1.ttf') format('truetype');
 }
-
 body {
     font-family: Arial, sans-serif;
     text-align: center;
